@@ -1,6 +1,5 @@
 package com.yg.edu.lock;
 
-import java.util.concurrent.locks.LockSupport;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
