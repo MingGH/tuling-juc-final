@@ -33,9 +33,21 @@ public class Juc02_Thread_ReentrantLock {
             lock.lock();
             log.info("Thread:{},第二次加锁",threadName);
             lock.unlock();
+            boolean flag = true;
+            while(true){
+                if(!flag){
+                    break;
+                }
+            }
             log.info("Thread:{},第一次解锁",threadName);
         lock.unlock();
         log.info("Thread:{},第二次解锁",threadName);
+    }
+
+    public static void reen2(){
+        lock.lock();
+        //dsssxxxxxx逻辑
+        lock.unlock();
     }
 
     public static void main(String[] args) {

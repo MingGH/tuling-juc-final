@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/jmm-specification/pom.xml" />
         <option value="$PROJECT_DIR$/thread-syncronized/pom.xml" />
         <option value="$PROJECT_DIR$/thread-concurrent/pom.xml" />
+        <option value="$PROJECT_DIR$/juc-atomic/pom.xml" />
+        <option value="$PROJECT_DIR$/juc-collections/pom.xml" />
       </list>
     </option>
   </component>

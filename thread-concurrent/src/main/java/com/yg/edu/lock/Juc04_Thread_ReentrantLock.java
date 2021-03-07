@@ -1,5 +1,8 @@
 package com.yg.edu.lock;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.locks.LockSupport;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
@@ -18,22 +21,33 @@ public class Juc04_Thread_ReentrantLock {
     static boolean flag = false;
 
     public static void main(String[] args) {
-
+        List<Thread> list = new ArrayList<>();
         for (int i=0;i<10;i++){
-            new Thread(()->{
+            Thread t = new Thread(()->{
                 lock.lock();
                 System.out.println(Thread.currentThread().getName()+"get lock");
+                    //拿到中断信号
                     while (!flag){
                         if(flag){
                             break;
                         }
                     }
                 lock.unlock();
-            },"t-"+i).start();
+            },"t-"+i);
+            list.add(t);
+            t.start();
+        }
+
+        try {
+            Thread.sleep(2000);
+            list.get(3).interrupt();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
 
 
-        lock.lock();
+
+
 
 
     }

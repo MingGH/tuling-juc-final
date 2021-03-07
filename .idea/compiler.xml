@@ -2,21 +2,26 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="tuling-juc-final" />
+        <module name="juc-collections" />
+        <module name="juc-atomic" />
+        <module name="thread-concurrent" />
         <module name="jmm-specification" />
         <module name="thread-syncronized" />
-        <module name="thread-concurrent" />
-        <module name="tuling-juc-final" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="jmm-specification" target="1.8" />
-      <module name="thread-concurrent" target="1.8" />
-      <module name="thread-syncronized" target="1.8" />
-      <module name="tuling-juc-final" target="1.8" />
+      <module name="jmm-specification" target="1.5" />
+      <module name="juc-atomic" target="1.5" />
+      <module name="juc-collections" target="1.5" />
+      <module name="thread-concurrent" target="1.5" />
+      <module name="thread-syncronized" target="1.5" />
+      <module name="tuling-juc-final" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

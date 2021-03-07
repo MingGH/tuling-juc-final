@@ -41,8 +41,6 @@ public class TuLingLock {
         this.lockHolder = lockHolder;
     }
 
-
-
     private boolean tryAquire(){
         Thread t = Thread.currentThread();
         int state = getState();

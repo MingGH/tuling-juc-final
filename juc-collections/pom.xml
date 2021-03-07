@@ -8,17 +8,17 @@
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath/>
 	</parent>
+
 	<groupId>com.yg.edu</groupId>
-	<artifactId>thread-syncronized</artifactId>
+	<artifactId>juc-collections</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>thread-syncronized</name>
-	<description>syncronized</description>
+	<name>juc-collections</name>
+	<description>collections</description>
 
 	<dependencies>
 		<dependency>
-			<groupId>org.openjdk.jol</groupId>
-			<artifactId>jol-core</artifactId>
-			<version>0.10</version>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
 		</dependency>
 	</dependencies>
 

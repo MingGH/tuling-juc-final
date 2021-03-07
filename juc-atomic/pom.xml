@@ -8,11 +8,12 @@
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath/>
 	</parent>
+
 	<groupId>com.yg.edu</groupId>
-	<artifactId>thread-syncronized</artifactId>
+	<artifactId>juc-atomic</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>thread-syncronized</name>
-	<description>syncronized</description>
+	<name>juc-atomic</name>
+	<description>atomic</description>
 
 	<dependencies>
 		<dependency>
@@ -21,5 +22,14 @@
 			<version>0.10</version>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
