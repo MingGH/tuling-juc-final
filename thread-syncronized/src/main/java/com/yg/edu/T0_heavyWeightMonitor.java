@@ -13,7 +13,7 @@ public class T0_heavyWeightMonitor {
 
     public static void main(String[] args) throws InterruptedException {
         Thread.sleep(5000);
-        final Object a = new Object();
+        Object a = new Object();
 
         Thread thread1 = new Thread(){
             @Override

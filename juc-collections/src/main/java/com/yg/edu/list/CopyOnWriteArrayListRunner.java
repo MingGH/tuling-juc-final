@@ -2,6 +2,7 @@ package com.yg.edu.list;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -52,8 +53,8 @@ public class CopyOnWriteArrayListRunner {
     }
 
     public void run() {
-        final int NUM = 10;
-        List<String> list = new ArrayList<String>();
+        final int NUM = Runtime.getRuntime().availableProcessors();
+        List<String> list = new CopyOnWriteArrayList<>();//new ArrayList<String>();
         for (int i = 0; i < NUM; i++) {
             list.add("main_" + i);
         }

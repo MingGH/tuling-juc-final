@@ -2,6 +2,7 @@ package com.yg.edu.map;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -11,7 +12,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @date: 2019-04-14 21:28
  */
 public class MultiThread implements Runnable {
-    private static Map<Integer,Integer> map = new HashMap<Integer, Integer>(2);
+    private static Map<Integer,Integer> map = new ConcurrentHashMap<>(11);
 
     private static AtomicInteger atomicInteger = new AtomicInteger();
 

@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/thread-concurrent/pom.xml" />
         <option value="$PROJECT_DIR$/juc-atomic/pom.xml" />
         <option value="$PROJECT_DIR$/juc-collections/pom.xml" />
+        <option value="$PROJECT_DIR$/juc-threadpool/pom.xml" />
+        <option value="$PROJECT_DIR$/juc-disruptor/pom.xml" />
       </list>
     </option>
   </component>
